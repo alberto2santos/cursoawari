@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> <!-- Adicione este link para Font Awesome -->
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/navbar.css">
+
+    <title>Formulário de cadastro</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="#" title="Página Inicial">
+                <img src="caminho/para/sua/logo.png" alt="Logo" title="Logo tipo da sua marca">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Sobre</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contato</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="background">
+        <div class="container mt-5">
+            <section class="form">
+                <div class="form-title">
+                    <h2>Preencha o formulário para concluir o cadastro</h2>
+                </div>
+                <form id="registration-form" method="post">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="email">E-mail</label>
+                                <input class="form-control" type="email" id="email" name="email" required placeholder="nome@exemplo.com">
+                            </div>
+                            <div class="form-group">
+                                <label for="confirmemail">Confirmar e-mail</label>
+                                <input class="form-control" type="email" id="confirmemail" name="confirmemail" required placeholder="nome@exemplo.com">
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Telefone</label>
+                                <input class="form-control" type="text" id="phone" name="phone">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="password">Crie uma Senha</label>
+                                <input class="form-control" type="password" id="password" name="password" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="confirmepassword">Confirme sua senha</label>
+                                <input class="form-control" type="password" id="confirmepassword" name="confirmepassword" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="celphone">Celular</label>
+                                <input class="form-control" type="text" id="celphone" name="celphone" required>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="firstname">Nome</label>
+                                <input class="form-control" type="text" id="firstname" name="firstname" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="birth">Nascimento</label>
+                                <input type="date" class="custom-date-input">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="lastname">Sobrenome</label>
+                                <input class="form-control" type="text" id="lastname" name="lastname" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="iddocument">CPF/CNPJ</label>
+                                <input class="form-control" type="text" id="iddocument" name="iddocument" required>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="cep">CEP</label>
+                                <input class="form-control" type="text" id="cep" name="cep">
+                            </div>
+                            <div class="form-group">
+                                <label for="numberaddress">Número</label>
+                                <input class="form-control" type="text" id="numberaddress" name="numberaddress">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="city">Cidade</label>
+                                <input class="form-control" type="text" id="city" name="city">
+                            </div>
+                            <div class="form-group">
+                                <label for="state">UF</label>
+                                <select name="uf" id="uf" class="form-control">
+                                    <option selected disabled>Selecione</option>
+                                    <option value="AC">Acre (AC)</option>
+                                    <option value="AL">Alagoas (AL)</option>
+                                    <option value="AP">Amapá (AP)</option>
+                                    <option value="AM">Amazonas (AM)</option>
+                                    <option value="BA">Bahia (BA)</option>
+                                    <option value="CE">Ceará (CE)</option>
+                                    <option value="DF">Distrito Federal (DF)</option>
+                                    <option value="ES">Espírito Santo (ES)</option>
+                                    <option value="GO">Goiás (GO)</option>
+                                    <option value="MA">Maranhão (MA)</option>
+                                    <option value="MT">Mato Grosso (MT)</option>
+                                    <option value="MS">Mato Grosso do Sul (MS)</option>
+                                    <option value="MG">Minas Gerais (MG)</option>
+                                    <option value="PA">Pará (PA)</option>
+                                    <option value="PB">Paraíba (PB)</option>
+                                    <option value="PR">Paraná (PR)</option>
+                                    <option value="PE">Pernambuco (PE)</option>
+                                    <option value="PI">Piauí (PI)</option>
+                                    <option value="RJ">Rio de Janeiro (RJ)</option>
+                                    <option value="RN">Rio Grande do Norte (RN)</option>
+                                    <option value="RS">Rio Grande do Sul (RS)</option>
+                                    <option value="RO">Rondônia (RO)</option>
+                                    <option value="RR">Roraima (RR)</option>
+                                    <option value="SC">Santa Catarina (SC)</option>
+                                    <option value="SP">São Paulo (SP)</option>
+                                    <option value="SE">Sergipe (SE)</option>
+                                    <option value="TO">Tocantins (TO)</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="address">Rua</label><br/>
+                                <input class="form-control" type="text" id="address" name="address">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="district">Bairro</label>
+                                <input class="form-control" type="text" id="district" name="district">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="gender">Sexo</label>
+                        <select class="form-control" id="gender" name="gender">
+                            <option selected disabled>Selecione</option>
+                            <option value="1">Masculino</option>
+                            <option value="2">Feminino</option>
+                        </select>
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" name="permission" id="permission">
+                        <label class="form-check-label" for="permission">Permito receber informações e atualizações por e-mail</label>
+                    </div>                   
+                    <div class="form-group mt-3">
+                        <input type="submit" id="submit-button" value="Enviar" class="btn btn-primary">
+                    </div>
+                </form>
+            </section>
+        </div>
+    </div>
+    
+    <footer class="footer bg-light py-3">
+        <p class="text-center text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae quibusdam neque quas ipsa repudiandae cupiditate. Maxime quaerat veniam dicta similique facilis? Maxime consequatur reiciendis quia veniam ipsa! Quibusdam, voluptate quasi!</p>
+        <div class="container text-center">
+            <a href="#"><i class="fab fa-facebook-f fa-lg mx-2"></i></a>
+            <a href="#"><i class="fab fa-instagram fa-lg mx-2"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in fa-lg mx-2"></i></a>
+            <a href="#"><i class="fab fa-twitter fa-lg mx-2"></i></a>
+        </div>
+        <div class="container text-center">
+            <span class="text-muted">© 2024 Meu Site. Todos os direitos reservados.</span>
+        </div>
+    </footer>    
+    <script type="text/javascript" src="./src/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

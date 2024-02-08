@@ -1,0 +1,10 @@
+.navbar{
+    width: 100%;
+    top: 0;
+    right: 0;
+    left: 0;
+    position: fixed;
+    z-index: 10;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+
