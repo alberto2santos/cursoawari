@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+    background: linear-gradient(to bottom, #8a58ff, #a36eff 20%, #995BED 40%, #FF8BC1 60%, #ffa600);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.profile {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    background-color: white;
+    box-sizing: border-box;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    border-radius: 10px;
+    width: 600px;
+    padding: 5px 10px;
+}
+
+.profile-data {
+    display: flex;
+    flex-direction: column;
+    margin: 0px 10px;
+}
+
+.profile-resume {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin: 10px 0 30px 10px;
+}
+
+.profile-resume-image-cropper {
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    margin-bottom: 8px;
+    overflow: hidden;
+    box-sizing: border-box;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+.profile-resume-image {
+    display: inline;
+    height: 100%;
+    width: auto;
+}
+
+.profile-resume-username {
+    font-size: 30px;
+    text-transform: capitalize;
+}
+
+.profile-resume-email {
+    padding: 0px;
+    font-size: 14px;
+    color: black;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.social-media {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    padding: 0;
+    gap: 8px;
+}
+
+.social-media-logo {
+    font-size: 22px;
+    color: #000;
+}
+
+.social-media-logo:hover {
+    color: #8a58ff !important;
+    transition: .5s;
+}
+
+.profile-bio {
+    font-size: 14px;
+    color: #030303;
+    padding: 10px 15px 20px;
+    border-top: #a36effb0 solid .5px;
+    box-sizing: border-box;
+}
+
+@media screen and (max-width: 600px) {
+    .profile {
+        width: 100%;
+        height: 100%;
+        border-radius: 0px;
+        margin: 0;
+        box-shadow:none;
+    }
+
+    .profile-data {
+        margin: 0;
+    }
+
+    .container {
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+    }
+
+    .profile-resume {
+        padding: 0;
+        margin: 5px 0 0 0;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .social-media {
+        justify-content: center;
+    }
+
+    .profile-resume-username {
+        text-align: center;
+    }
+}
